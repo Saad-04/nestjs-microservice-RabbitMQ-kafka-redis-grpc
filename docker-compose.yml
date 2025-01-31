@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  service-user:
+    image: postgres
+    restart: unless-stopped
+  service-token:
+    image: postgres
+    restart: unless-stopped
+  cache:
+    image: redis:6.2-alpine
